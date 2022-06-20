@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <link href="assets/css/styles.css" rel="stylesheet">
 
-    <link href="assets/css/styles.css" rel="stylesheet">
-</head>
-<body>
-    <header id="header-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Cadastro/login</a></li>
-            <li><a href="#">Sobre</a></li>
-        </ul>
-    </header>
-    <main id="login-main">
-        <form>
-            <div id="arealogin">
-                <h1>Login</h1>dasdas
-                <div class="login-org">
-                    <label><strong>Usuário:</strong></label>
-                    <input type="text" name="user" id="user" required>
-                </div>
-                <div class="login-org">
-                    <label><strong>Senha:</strong></label>
-                    <input type="text" name="user" id="user" required>
-                </div>
-                <div id="login-btn">
-                    <button type="submit" id="cadastrar-login"><strong>CADASTRAR</strong></button>
-                    <button type="submit" id="entrar-login"><strong>ENTRAR</strong></button>
-                </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header>
+            <div id="container-da-pagina-principal">
+                <a href="index.html">Pagina Principal</a>
             </div>
-        </form>
-    </main>
-</body>
+            <div id="container-de-login">
+                <ul>
+                    <li><a href="cadastrar.html">Cadastrar</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="pagina-de-login">
+            <form>
+                <div id="container-de-login">
+                    <div>
+                        <h1>Login</h1>
+                    </div>
+                    <div class="organizar-container-flex">
+                        <label><strong>Email:</strong></label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="organizar-container-flex">
+                        <label><strong>Senha:</strong></label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div class="organizar-container-block">
+                    </div>
+                </div>
+                <a href="cadastrar.html" class="btn btn-primary"><strong>CADASTRAR</strong></a>
+                <button class="btn btn-success" onClick="entrar(event)"><strong>ENTRAR</strong></button>
+            </form>
+            <hr>
+            <br>
+            <div id="conteudo"></div>
+        </main>
+    </body>
     <script src="assets/js/js.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+      </script>
 </html>
