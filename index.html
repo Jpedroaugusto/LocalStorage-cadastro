@@ -1,78 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
-    <body>
-        <main id="pagina-de-login">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">SOBRE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="entrar-conta">
+            <div>
+                <h1>ENTRAR</h1>
+            </div>
             <form>
-                <div id="area-de-login">
-                    <div>
-                        <h1>Cadastro</h1>
-                    </div>
-                    <div class="organizar-container-flex">
-                        <div class="organizar-container-grid">
-                            <label><strong>Nome:</strong></label>
-                            <input type="text" name="name" id="box-nome">
-                        </div>
-                        <div class="organizar-container-grid">
-                            <label><strong>Sobrenome:</strong></label>
-                            <input type="text" name="surname" id="box-sobrenome">
-                        </div>
-                    </div>
-                    <div class="organizar-container-grid">
-                        <label><strong>Email</strong></label>
-                        <input type="text" name="email" id="box-email">
-                    </div>
-                    <div class="organizar-container-grid"> 
-                        <label><strong>Número</strong></label>
-                        <input type="text" name="number" id="box-numero">
-                    </div>
-                    <div class="organizar-container-grid">
-                        <label><strong>CPF</strong></label>
-                        <input type="text" name="CPF" id="box-cpf">
-                    </div>
-                    <div class="organizar-container-grid">
-                        <label><strong>Senha</strong></label>
-                        <input type="password" name="password" id="box-senha">
-                    </div>
-                    <div class="organizar-container-grid">
-                        <label><strong>Confirmar senha</strong></label>
-                        <input type="password" name="password" id="box-confirmarsenha">
-                    </div>
+                <div class="container-grid">
+                    <label>Email</label>
+                    <input type="email" name="verificar-email" id="verificar-email">
                 </div>
-                <div>
-                    <button class="btn btn-primary" onClick="criarconta(event)">Criar conta</button>
+                <div class="container-grid">
+                    <label>Senha</label>
+                    <input type="password" name="verificar-senha" id="verificar-senha">
                 </div>
-                <div id="alerta"></div>
+                <div class="container-botoes">
+                    <a href="cadastrar.html" id="btn-nav-cadastrar" class="btn-de-navegacao">CADASTRAR</a>
+                    <button id="btn-verificar" class="btn-com-funcao">ENTRAR</button>
+                </div>
             </form>
-            <br>
-            <br>
-            <form>
-                <div id="container-de-login">
-                    <div>
-                        <h1>Login</h1>
-                    </div>
-                    <div class="organizar-container-flex">
-                        <label><strong>Email:</strong></label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div class="organizar-container-flex">
-                        <label><strong>Senha:</strong></label>
-                        <input type="text" name="password" id="password">
-                    </div>
-                    <div class="organizar-container-block">
-                    </div>
-                </div>
-                <a href="cadastrar.html" class="btn btn-primary"><strong>CADASTRAR</strong></a>
-                <button class="btn btn-success" onClick="entrar(event)"><strong>ENTRAR</strong></button>
-            </form>
-            <hr>
-            <br>
-            <div id="conteudo"></div>
-        </main>
-    </body>
-    <script src="js.js"></script>
+            <div id="alerta-login">
+                
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="assets/js/entrar.js"></script>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">SOBRE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="cadastrar-conta" class="invisible">
+            <div>
+                <h1>CADASTRAR</h1>
+            </div>
+            <form>
+                <div class="container-flex">
+                    <div class="container-grid">
+                        <label>Nome</label>
+                        <input type="text" name="cadastrar-nome" id="cadastrar-nome">
+                    </div>
+                    <div class="container-grid">
+                        <label>Sobrenome</label>
+                        <input type="text" name="cadastrar-sobrenome" id="cadastrar-sobrenome">
+                    </div>
+                </div>
+                    <div class="container-grid">
+                        <label>Email</label>
+                        <input type="email" name="cadastrar-email" id="cadastrar-email">
+                    </div>
+                <div class="container-flex">
+                    <div class="container-grid">
+                        <label>Senha</label>
+                        <input type="password" name="cadastrar-senha" id="cadastrar-senha">
+                    </div>
+                    <div class="container-grid">
+                        <label>Confirmar Senha</label>
+                        <input type="password" name="confirmar-senha" id="confirmar-senha">
+                    </div>
+                </div>
+                <div class="container-botoes">
+                    <a href="index.html" id="1" class="btn-de-navegacao">VOLTAR</a>
+                    <button id="btn-cadastrar" class="btn-com-funcao">CADASTRAR</button>
+                </div>
+            </form>
+            <div id="alerta-cadastrar"></div>
+        </div>
+    </main>
+</body>
+    <script src="assets/js/cadastrar.js"></script>
+</html>
